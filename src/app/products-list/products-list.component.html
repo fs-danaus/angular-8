@@ -1,0 +1,11 @@
+
+<div *ngFor="let product of products;index as productId">
+  <a [title]="product.name" [routerLink]="['products',productId]" >{{product.name}}</a>
+   <div >{{product.description}}</div>
+  <button (click)="shae(product.name)">共享</button>
+  
+  <app-product-alert 
+  [product]="product"  
+  (nodifyEvent)="onNotify(name)"></app-product-alert>
+ 
+</div>

@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() {alert(22); }
+  constructor() { }
 
   ngOnInit() {
-    alert(11);
+    
   }
 
 }

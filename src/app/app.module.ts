@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductsListComponent } from './products-list/products-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -20,8 +20,8 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-  { path: '', component: ProductsListComponent },
-  {path:'products/:productId',component:ProductDetailsComponent},
+      { path: '', component: ProductsListComponent },
+      { path: 'products/:productId', component: ProductDetailsComponent },
     ])
   ],
   providers: [],
